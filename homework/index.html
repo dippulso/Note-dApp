@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="script.js"></script> 
+</head>
+<body>
+    <div>
+    <h1>AirDrop Dapp</h1>
+    <p>Select one or more users to send your tokens:</p>
+    <select id="addresses" multiple="multiple" style="margin:  15px;">
+        <option value="0xa8Fe9E715A096c76B22e0E2896dCaC054c0900fB">Yerasyl</option> 
+        <option value="0x16D2a98BD3C98542a04B23D0c618209BA48Ebffa">KS</option>	
+        <option value="0x9548F9D99aB0F6Ba7C67F97a1319eAD771B78042">Abdr</option>	
+        <option value="0xD0F0152FB7290Fa8264Ec3F71C6742753E4A1aa6">Ilyas</option>	
+        <option value="0x26Ed8b4d4cEE16b8695dd325129CA931F34e0EEF">Dulat</option>	
+        <option value="0x3EAcCb55220e644708191EF9d6b798dF6EAFa336">Sultan</option>	
+        <option value="0x6607940324b23C59526acb0206aAD16BF45C63a7">AnuarB</option>	
+        <option value="0x3a037B4F884dA343181Cf3fC68a77C5d2Df5Ba69">Angelina</option>	
+        <option value="0xE4809ab3b777aA717eaC80b686a2bB264147069A">Diana</option>	
+        <option value="0x12a458aa3c709Bb4aA878741f9373bfd18FAADfF">Ablai</option> 	
+        <option value="0x3fdfd9F44001cEAd9475B83A7259BA57a2aD69C2">Alan</option>	
+        <option value="0xE51eeEeE155BCec34126BF01BaBe85Ac46DB52Af">Askhat</option> 	
+        <option value="0xF77b534FeEea2883791Aa7ce4fcF37702e4A633E">Ais</option>	
+        <option value="0x1A3c736daBdADDa18C322f832685596671e084AD">Sholpan</option>	
+    </select>
+    <input type="text" id="inputNote"/>
+    <button onclick="airdropTokensWithTransfer()">AirDrop Tokens By Transfer</button>
+    <button onclick="getBalance()">Get Balance</button>
+    <p>ERC20 token Balance: <span id="balance"></span></p>
+</div>
+</body>
+</html>
